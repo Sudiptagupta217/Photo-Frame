@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/pic"
         android:layout_width="wrap_content"
         android:layout_height="400dp"
         android:layout_marginTop="16dp"
@@ -16,7 +16,55 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/Doraemon" />
+        app:srcCompat="@drawable/bheem" />
+
+    <ImageView
+        android:id="@+id/pic1"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_marginTop="16dp"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/doraemon" />
+
+    <ImageView
+        android:id="@+id/pic2"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_marginTop="16dp"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/micky" />
+
+    <ImageView
+        android:id="@+id/pic3"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_marginTop="16dp"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/panda" />
+
+    <ImageView
+        android:id="@+id/pic4"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_marginTop="16dp"
+        android:alpha="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tom" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -35,14 +83,16 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="40dp"
             android:layout_weight="1"
+            android:onClick="prev"
             app:srcCompat="@drawable/ic_baseline_skip_previous_24" />
 
         <ImageButton
-            android:id="@+id/nextButton2"
+            android:id="@+id/nextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
             android:layout_weight="1"
+            android:onClick="next"
             app:srcCompat="@drawable/ic_baseline_skip_next_24" />
     </LinearLayout>
 
@@ -58,5 +108,5 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/pic" />
 </androidx.constraintlayout.widget.ConstraintLayout>
