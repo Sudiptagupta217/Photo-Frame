@@ -15,12 +15,17 @@ public class MainActivity extends AppCompatActivity {
     TextView nameTextView;
     int currentImage = 0;
 
+    String[] name = {"Bheem", "Doremon", "Micky", "Panda", "Tom"};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         prevBtn = findViewById(R.id.prevButton);
         nextBtn = findViewById(R.id.nextButton);
+        nameTextView = findViewById(R.id.nameTextView);
+        nameTextView.setText(name[currentImage]);
+
     }
 
     //set previous button code
@@ -36,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
         pic = findViewById(y);
         pic.setAlpha(1f);
 
+        nameTextView.setText(name[currentImage]);
+
     }
 
     public void next(View view) {
@@ -49,5 +56,8 @@ public class MainActivity extends AppCompatActivity {
         int y = this.getResources().getIdentifier(idY, "id", getPackageName());
         pic = findViewById(y);
         pic.setAlpha(1f);
+
+        nameTextView.setText(name[currentImage]);
+
     }
 }

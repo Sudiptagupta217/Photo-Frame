@@ -8,10 +8,10 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/pic"
-        android:layout_width="wrap_content"
+        android:id="@+id/pic0"
+        android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -20,9 +20,9 @@
 
     <ImageView
         android:id="@+id/pic1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:alpha="0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -32,9 +32,9 @@
 
     <ImageView
         android:id="@+id/pic2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:alpha="0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -44,9 +44,9 @@
 
     <ImageView
         android:id="@+id/pic3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:alpha="0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -56,9 +56,9 @@
 
     <ImageView
         android:id="@+id/pic4"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:alpha="0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -108,5 +108,5 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pic" />
+        app:layout_constraintTop_toBottomOf="@+id/pic0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
